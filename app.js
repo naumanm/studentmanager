@@ -26,19 +26,20 @@ app.get("/", function(req, res) {
   });
 });
 
-// create
+// create, the route should be /students/create
 app.post("/create", function(req,res){
   console.log("create route");
   client.LPUSH("studentlist", req.body.studentname);
   res.redirect("/");
 });
 
-// update
+// update, the route should be /students/:student/edit
 app.put("/update/:student", function(req,res){
   console.log("update route");
 
-  // Use LSET to update based on index
-  // LSET studentlist id "value"
+  // should remove the old and add the new
+  // not edit in place
+
   res.redirect("/");
 });
 
