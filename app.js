@@ -36,7 +36,9 @@ app.post("/create", function(req,res){
 // update
 app.put("/update/:student", function(req,res){
   console.log("update route");
-  //client.LPUSH("studentlist", req.body.studentname);
+
+  // Use LSET to update based on index
+  // LSET studentlist id "value"
   res.redirect("/");
 });
 
