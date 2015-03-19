@@ -1,0 +1,29 @@
+
+body {
+  font-family: arial;
+  background-color: khaki;
+}
+
+h1 {
+  color: blue;
+}
+
+form {
+  display: inline;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+  margin: 10px;
+}
+
+.inline {
+  display: inline-block;
+  margin: 10px;
+}
+
+.column {
+  width: 100px;
+  text-align: center;
+}
